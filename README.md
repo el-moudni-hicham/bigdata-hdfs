@@ -62,3 +62,27 @@
 `hdfs dfs -mv SDIA/JAVA/Cours/CoursPY2 SDIA/JAVA/Cours/CoursJAVA2`
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/f720bccf-dbd3-4f2f-9e8c-1d777f92a13e)
+
+## Create files in local
+`touch {TP1CPP,TP2CPP,TP1JAVA,TP2JAVA,TP3JAVA}`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/44a99928-3cef-44b3-bcc2-749b70c1c0f4)
+
+## Copy From Local to HDFS
+`hdfs dfs -copyFromLocal {TP1CPP,TP2CPP} SDIA/PYTHON/TPs`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/0ffa9ce5-ca4f-4c6b-9791-1ad2e9d9f7c9)
+
+## Display content of repository 
+`hdfs dfs -ls -R SDIA`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/b3ab4d14-e043-4563-9cee-5a28440369f7)
+
+## Remove file and directory
+`hdfs dfs -rm SDIA/PYTHON/TPs/TP1CPP`
+`hdfs dfs -rmr SDIA/JAVA`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/ce6f558f-ba16-4639-a3fc-630d0e27ce1b)
+
+
+
