@@ -53,4 +53,12 @@
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/e88bda5d-7469-41dd-8c19-bb897fbda0ee)
 
+## Remove a file
+`hdfs dfs -rm SDIA/JAVA/Cours/CoursPY1`
 
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/e5dbd232-f22f-4b95-94ad-20a1107ee5a9)
+
+## Rename files
+`hdfs dfs -mv SDIA/JAVA/Cours/CoursPY2 SDIA/JAVA/Cours/CoursJAVA2`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/f720bccf-dbd3-4f2f-9e8c-1d777f92a13e)
