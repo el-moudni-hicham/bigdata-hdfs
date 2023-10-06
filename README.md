@@ -36,7 +36,7 @@
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/be3c5d4d-0d35-49f4-aba0-70e236a3f0d5)
 
-## Add content to files :
+## Add content to files 
 `echo "Hi SDIA!" | hadoop fs -appendToFile - SDIA/PYTHON/Cours/CoursPY2`
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/74b427d0-51a8-4911-bc0b-357200c1d03a)
@@ -46,5 +46,11 @@
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/04827615-6775-4873-92fa-a4eae55cb85c)
 
+## Copy files to another repository
+`hdfs dfs -cp -f SDIA/PYTHON/Cours/{CoursPY1,CoursPY2,CoursPY3} SDIA/JAVA/Cours`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/736b19c6-f3ce-437a-94e6-2a2209c762cf)
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/e88bda5d-7469-41dd-8c19-bb897fbda0ee)
 
 
