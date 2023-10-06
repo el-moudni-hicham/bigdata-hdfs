@@ -22,10 +22,29 @@
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/b8779ee7-fada-4ec3-9853-e1653915188b)
 
-## Create the following tree in the HDFS '
-
+## Create the following tree in the HDFS 
 `hdfs dfs -mkdir -p SDIA/{JAVA/{TPs,Cours},PYTHON/{TPs,Cours}}`
+
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/ea7f31e7-34be-4665-968f-e910fb95115f)
 
 `hdfs dfs -ls -R SDIA`
+
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/61469a24-8648-4144-9f3f-8adbeaa7a06f)
+
+## Create files in a directory
+`hdfs dfs -touchz SDIA/PYTHON/Cours/{CoursPY1,CoursPY2,CoursPY3}`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/be3c5d4d-0d35-49f4-aba0-70e236a3f0d5)
+
+## Add content to files :
+`echo "Hi SDIA!" | hadoop fs -appendToFile - SDIA/PYTHON/Cours/CoursPY2`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/74b427d0-51a8-4911-bc0b-357200c1d03a)
+
+## Display Content of files
+`hdfs dfs -cat SDIA/PYTHON/Cours/CoursPY2`
+
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/04827615-6775-4873-92fa-a4eae55cb85c)
+
+
+
