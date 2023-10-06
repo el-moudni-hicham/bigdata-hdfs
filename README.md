@@ -80,6 +80,7 @@
 
 ## Remove file and directory
 `hdfs dfs -rm SDIA/PYTHON/TPs/TP1CPP`
+
 `hdfs dfs -rmr SDIA/JAVA`
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/ce6f558f-ba16-4639-a3fc-630d0e27ce1b)
