@@ -1,5 +1,12 @@
 # Handling the HDFS file system
 
+### What is HDFS ?
+```text 
+HDFS is a distributed file system that handles large data sets running on commodity hardware.
+It is used to scale a single Apache Hadoop cluster to hundreds (and even thousands) of nodes.
+HDFS is one of the major components of Apache Hadoop, the others being MapReduce and YARN.
+```
+
 ## Start Hadoop processes
 
 `start-dfs.sh`
