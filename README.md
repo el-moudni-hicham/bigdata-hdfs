@@ -30,6 +30,9 @@ HDFS is one of the major components of Apache Hadoop, the others being MapReduce
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/b8779ee7-fada-4ec3-9853-e1653915188b)
 
 ## Create the following tree in the HDFS 
+
+![Untitled Diagram drawio](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/8cfdf06f-590a-470b-b6b2-1ecdc54cc5df)
+
 `hdfs dfs -mkdir -p SDIA/{JAVA/{TPs,Cours},PYTHON/{TPs,Cours}}`
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/ea7f31e7-34be-4665-968f-e910fb95115f)
