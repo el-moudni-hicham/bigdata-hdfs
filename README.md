@@ -95,5 +95,49 @@ HDFS is one of the major components of Apache Hadoop, the others being MapReduce
 
 ![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/ce6f558f-ba16-4639-a3fc-630d0e27ce1b)
 
+## Hadoop API FileSystem
 
+The following example shows how to read from a text file in HDFS :
 
+```java
+public class Read {
+    public static void main(String[] args) throws IOException {
+        Configuration configuration = new Configuration();
+        configuration.set("fs.defaultFS","hdfs://localhost:9000");
+        FileSystem fileSystem = FileSystem.get(configuration);
+        Path path = new Path("/user/hadoop/TP1JAVA/text");
+        FSDataInputStream fsDataInputStream = fileSystem.open(path);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fsDataInputStream, StandardCharsets.UTF_8));
+        String line = null;
+        while((line = bufferedReader.readLine()) != null){
+            System.out.println(line);
+        }
+
+        fsDataInputStream.close();
+        bufferedReader.close();
+    }
+}
+```
+
+The following example shows how to write to a text file in HDFS :
+
+```java
+public class Write {
+    public static void main(String[] args) throws IOException {
+        Configuration configuration = new Configuration();
+        configuration.set("fs.defaultFS","hdfs://localhost:9000");
+        FileSystem fileSystem = FileSystem.get(configuration);
+        Path path = new Path("/user/hadoop/TP1JAVA/text");
+        FSDataOutputStream fsDataOutputStream = fileSystem.create(path);
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fsDataOutputStream, StandardCharsets.UTF_8));
+
+        bufferedWriter.write("JAVA1");
+        bufferedWriter.newLine();
+        bufferedWriter.write("PYTHON");
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+        fsDataOutputStream.close();
+    }
+}
+```
