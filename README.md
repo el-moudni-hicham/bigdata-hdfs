@@ -119,6 +119,8 @@ public class Read {
 }
 ```
 
+![image](https://github.com/el-moudni-hicham/bigdata-hdfs/assets/85403056/4bd68c9c-7e27-48dd-adaa-4eabf0b6a88e)
+
 The following example shows how to write to a text file in HDFS :
 
 ```java
